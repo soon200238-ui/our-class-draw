@@ -9,7 +9,7 @@ import {
 
 // 아래 값을 Firebase 웹 앱 설정 화면의 실제 값으로 바꾸세요.
 const firebaseConfig = {
-  apiKey: "AIzaSyA0eSIC8SHVs3zcrXmPYa9J6oKEKWu9D5I",
+  apiKey: "AIzaSyAOeSIC8SHVs3zcrXmPYa9J6oKEKWu9D5I",
   authDomain: "our-class-draw.firebaseapp.com",
   projectId: "our-class-draw",
   storageBucket: "our-class-draw.firebasestorage.app",

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>우리 반 뽑기</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand-mark" aria-hidden="true">★</div>
+      <div>
+        <p class="eyebrow">TODAY'S CLASSROOM</p>
+        <h1>우리 반 뽑기</h1>
+        <p class="subtitle">누가 뽑힐까요? 두근두근!</p>
+      </div>
+    </header>
+
+    <section id="loginPanel" class="panel login-panel">
+      <div class="mini-icon">🔐</div>
+      <h2>선생님 로그인</h2>
+      <p>등록된 선생님 계정으로 로그인하면 학생 명단을 불러옵니다.</p>
+      <button id="loginBtn" class="btn btn-primary">Google로 로그인</button>
+      <p id="loginMessage" class="message" role="status"></p>
+    </section>
+
+    <section id="drawPanel" class="panel draw-panel" hidden>
+      <div class="pill"><span class="dot"></span><span id="classStatus">학생 명단 불러오는 중</span></div>
+      <div class="result-wrap">
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✧</div>
+        <p class="result-label">오늘의 주인공</p>
+        <div id="result" class="result" aria-live="polite">준비됐나요?</div>
+        <p id="resultHint" class="result-hint">버튼을 눌러 친구 한 명을 뽑아 보세요.</p>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-copy"><span>뽑기 진행</span><strong id="progressText">0 / 0명</strong></div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      </div>
+
+      <div class="actions">
+        <button id="drawBtn" class="btn btn-primary btn-big" disabled>🎲 학생 뽑기</button>
+        <button id="resetBtn" class="btn btn-secondary" disabled>↻ 처음부터</button>
+      </div>
+      <p id="appMessage" class="message" role="status"></p>
+      <div class="bottom-row">
+        <span id="remainingText">남은 학생 0명</span>
+        <button id="logoutBtn" class="text-button">로그아웃</button>
+      </div>
+    </section>
+
+    <footer>우리 반의 즐거운 하루를 응원해요! <span aria-hidden="true">🌈</span></footer>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
